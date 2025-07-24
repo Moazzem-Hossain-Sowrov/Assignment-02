@@ -1,7 +1,68 @@
 /* Google-fonts */
-
+*{
+   margin: 0px;
+   padding: 0px;
+}
 body{
    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
    font-family: "Inter", sans-serif;
+}
+li,a{
+   list-style: none;
+   text-decoration: none;
+}
 
+/* Header-part */
+header{
+   max-width: 1140px;
+   margin: auto;
+}
+.nav{
+   display: flex;
+   justify-content: space-between;
+}
+.nav img{
+   width: 135px;
+   padding: 20px 0 10px;
+}
+.nav-container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.nav-container ul{
+   display: flex;
+}
+.nav-container ul li a{
+   padding-right: 45px;
+   color: #8987A1;
+}
+.nav-container span{
+   display: flex;
+   padding: 0px;
+   gap: 10px;
+}
+
+/* Main-part */
+main{
+   max-width: 1140px;
+   margin: auto;
+}
+.banner{
+   margin-top: 80px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   align-items: end;
+}
+.banner h3{
+   font-size: 65px;
+   font-weight: bold;
+}
+.banner h3 span{
+   color: #E95A08;
+}
+.banner p{
+   font-size: 24px;
+   color: rgba(0, 0, 0, 50%);
+   padding-top: 10px;
 }
