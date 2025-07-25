@@ -13,6 +13,9 @@ li,a{
    list-style: none;
    text-decoration: none;
 }
+a{
+   cursor: pointer;
+}
 h3{
    font-size: 55px;
    font-weight: bold;
@@ -47,6 +50,7 @@ header{
    display: flex;
    padding: 0px;
    gap: 10px;
+   cursor: pointer;
 }
 .nav-container span p{
    margin: 0px;
@@ -112,6 +116,13 @@ header{
    padding: 15px;
    border: none;
    color: #fff;
+   cursor: pointer;
+   height: 50px;
+}
+.btn:hover{
+   background-color: #f44216;
+   font-size: 20px;
+   transition: 0.5s ease-in-out;
 }
 
 /* This is plants lover section */
@@ -232,6 +243,9 @@ header{
 .join-btn{
    width: 180px;
    font-size: 16px;
+}
+.join-btn:hover{
+   font-size: 18px;
 }
 
 /* This is footer section */
