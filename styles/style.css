@@ -52,6 +52,8 @@ header{
    margin: 0px;
 }
 
+
+
 /* Main-part */
 
 
@@ -253,3 +255,30 @@ header{
 }
 
 
+@media screen and (max-width: 576px) {
+   /* Header section */
+   .nav{
+      max-width: 360px;
+      margin: auto;
+      justify-content: space-between;
+   }
+   .nav img{
+      width: 65px;
+   }
+   .nav-container ul li{
+      display: none;
+   }
+   .nav-container span{
+      font-size:14px ;
+   }
+   /* Main Section */
+   h3{
+      font-size: 24px;
+   }
+   .pera{
+      font-size: 14px;
+   }
+
+   /* banner Section */
+
+}
