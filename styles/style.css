@@ -1,5 +1,6 @@
 /* Google-fonts */
 *{
+   box-sizing: border-box;
    margin: 0;
    padding: 0;
 }
@@ -7,6 +8,7 @@ body{
    @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
    font-family: "Inter", sans-serif;
 }
+
 li,a{
    list-style: none;
    text-decoration: none;
@@ -51,14 +53,13 @@ header{
 }
 
 /* Main-part */
-main{
-   max-width: 1140px;
-   margin: auto;
-}
+
 
 /* This is banner section */
 
 .banner{
+   max-width: 1140px;
+   margin: auto;
    margin-top: 80px;
    display: grid;
    grid-template-columns: 1fr 1fr;
@@ -78,7 +79,8 @@ main{
 
 /* This is plant section */
 .plants{
-   margin: 100px 0px;
+   max-width: 1140px;
+   margin: 100px auto;
    text-align: center;
 }
 .plants p{
@@ -110,9 +112,10 @@ main{
 /* This is plants lover section */
 
 .plants-lover{
+   max-width: 1140px;
+   margin: auto;
    display: flex;
    justify-content: space-between;
-   margin: 50px 0px;
 }
 .lover-details{
    align-items: center;
@@ -135,8 +138,9 @@ main{
 /* This is Latest Deals Section */
 
 .deals{
+   max-width: 1140px;
+   margin: 100px auto;
    text-align: center;
-   margin-bottom: 70px;
 }
 .deals p{
    width: 900px;
@@ -152,7 +156,6 @@ main{
    gap: 25px;
    color: #fff;
 }
-
 .card-1{
    background-image: url(./../assets/deal-bloom.png);
    background-repeat: no-repeat;
@@ -190,4 +193,34 @@ main{
 }
 .card-3 a{
    font-size: 28px;
+}
+
+/* This is join Section */
+
+.join{
+   background-image: url(./../assets/news-letter-bg.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   color: #fff;
+   text-align: center;
+   height: 520px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.join-login{
+   display: flex;
+   width: 830px;
+   margin-top: 20px;
+}
+#mail{
+   width: 100%;
+   padding: 10px 20px;
+   border: none;
+}
+
+.join-btn{
+   width: 180px;
+   font-size: 16px;
 }
