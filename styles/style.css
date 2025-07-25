@@ -247,9 +247,8 @@ header{
 }
 .community{
    text-align: end;
-}
-.community a{
-   padding:0px 20px ;
+      display: flex;
+      justify-content: space-evenly;
 }
 
 
@@ -364,6 +363,46 @@ header{
 
    /* Join Section Responsive */
 
+   .join{
+      max-width: 576px;
+      height: 280px;
+   }
+   .join-login{
+      width: 320px;
+      height: 40px;
+   }
+   #mail{
+      font-size: 14px;
+   }
+   .join-btn{
+      width: 100px;
+      margin: 0;
+      padding: 10px;
+   }
 
+   /* This is footer Section */
 
+   .footer{
+      max-width: 360px;
+      margin: 50px auto;
+   }
+   .footer-container{
+      grid-template-columns: 1fr;
+   }
+   .description{
+      width: 300px;
+      margin-bottom: 10px;
+   }
+   .description img{
+      width: 180px;
+   }
+   .sources{
+      flex-direction: column;
+      margin-bottom: 20px;
+   }
+   .community{
+      width: 300px;
+      justify-content:space-between;
+   }
+   
 }
