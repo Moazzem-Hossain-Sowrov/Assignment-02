@@ -82,7 +82,7 @@ header{
 /* This is plant section */
 .plants{
    max-width: 1140px;
-   margin: 100px auto;
+   margin: 100px auto 120px;
    text-align: center;
 }
 .plants p{
@@ -121,6 +121,15 @@ header{
    margin: auto;
    display: flex;
    justify-content: space-between;
+}
+.trusted-badge{
+   position: relative;
+}
+.badge{
+   width: 200px;
+   position: absolute;
+   top: -90px;
+   right: -80px;
 }
 .lover-details{
    align-items: center;
@@ -325,6 +334,12 @@ header{
    .plants-lover{
       flex-direction: column;
       max-width: 360px;
+   }
+   .store{
+      width: 100%;
+   }
+   .badge{
+      display: none;
    }
    .lover-details{
       margin-top: 30px;
