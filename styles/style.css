@@ -224,3 +224,32 @@ header{
    width: 180px;
    font-size: 16px;
 }
+
+/* This is footer section */
+
+.footer{
+   max-width: 1140px;
+   margin: 100px auto;
+}
+.footer a{
+   color: rgba(0, 0, 0, 50%);
+   line-height: 2.5;
+}
+.footer-container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: space-between;
+}
+
+.sources{
+   display: flex;
+   justify-content: space-around;
+}
+.community{
+   text-align: end;
+}
+.community a{
+   padding:0px 20px ;
+}
+
+
