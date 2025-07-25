@@ -99,6 +99,9 @@ header{
    font-size: 24px ;
    line-height: 1.8;
 }
+.card img{
+   width: 100%;
+}
 .price{
    font-weight: bold;
 }
@@ -158,35 +161,30 @@ header{
    gap: 25px;
    color: #fff;
 }
-.card-1{
-   background-image: url(./../assets/deal-bloom.png);
+.idea{
    background-repeat: no-repeat;
    font-size: 20px;
    background-size: cover;
+   position: relative;
+}
+.card-1{
+   background-image: url(./../assets/deal-bloom.png);
    grid-area: bloom;
-  position: relative;
 }
 .card-2{
    background-image: url(./../assets/deal-ana.png);
-   background-repeat: no-repeat;
-   font-size: 20px;
-   background-size: cover;
    grid-area: ana;
-  position: relative;
 }
 .card-3{
    background-image: url(./../assets/deal-zabo.png);
-   background-repeat: no-repeat;
-   background-size: cover;
    font-size: 40px;
    grid-area: zabo;
-  position: relative;
 }
 .cd{
    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
 }
 .cd a{
    font-size: 16px;
@@ -264,6 +262,7 @@ header{
    }
    .nav img{
       width: 65px;
+      padding: 10px 0;
    }
    .nav-container ul li{
       display: none;
@@ -276,9 +275,95 @@ header{
       font-size: 24px;
    }
    .pera{
+      max-width: 360px;
       font-size: 14px;
    }
 
    /* banner Section */
+   .banner{
+      grid-template-columns: 1fr;
+      grid-template-areas: "banner-img"
+      "banner-fresh";
+      margin: 30px 0 0;
+   }
+   .banner-fresh{
+      grid-area: banner-fresh;
+      max-width:360px;
+      margin: auto;
+   }
+   .banner-img{
+      grid-area: banner-img;
+      margin-bottom: 30px;
+   }
+   .banner h3{
+      font-size: 24px;
+      width: 200px;
+   }
+   .banner-img img{
+      width: 100%;
+   }
+
+   /* Plants Section */
+   .plants{
+      max-width: 360px;
+      margin: 50px auto;
+   }
+   .card-section{
+      grid-template-columns: 1fr 1fr;
+      margin-top: 20px;
+      gap: 20px 10px;
+   }
+   .card{
+      font-size: 16px;
+      line-height: 1.5;
+   }
+   .btn{
+      font-size: 14px;
+      margin-top: 15px;
+   }
+   /* Plants-lover Section */
+
+   .plants-lover{
+      flex-direction: column;
+      max-width: 360px;
+   }
+   .lover-details{
+      margin-top: 30px;
+   }
+   .lover-details ul{
+      padding-left: 20px;
+      margin-top: 1em;
+   }
+   .lover-details ul li{
+      font-size: 14px;
+   }
+
+   /* Latest Deals Section */
+
+   .deals{
+      max-width: 360px;
+      margin: 60px auto;
+   }
+   .latest-deals{
+      grid-template-areas:"bloom" "ana" "zabo" ;
+      grid-template-columns: 1fr;
+      margin-top: 40px;
+      gap: 20px;
+      height: 600px;
+   }
+   .idea{
+      border-radius: 20px;
+      font-size: 22px;
+   }
+   h5{
+      width: 100%;
+   }
+   .idea a{
+      font-size: 16px;
+   }
+
+   /* Join Section Responsive */
+
+
 
 }
